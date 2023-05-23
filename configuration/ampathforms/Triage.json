@@ -730,7 +730,7 @@
 							"label": "Triage Notes:",
 							"type": "obs",
 							"questionOptions": {
-								"rendering": "text",
+								"rendering": "textarea",
 								"concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"conceptMappings": [
 									{
