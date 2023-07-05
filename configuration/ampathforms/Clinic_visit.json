@@ -8,7 +8,7 @@
 	"encounter": "KP Clinic visit form",
 	"pages": [
 		{
-			"label": "KP Clinical Visit",
+			"label": "KP Clinical Encounter",
 			"sections": [
 				{
 					"label": "Visit Details",
@@ -45,7 +45,12 @@
 							"id": "encLocation"
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			"label": "KP Visit Details",
+			"sections": [
 				{
 					"label": "Visit Details",
 					"isExpanded": "true",
@@ -116,7 +121,12 @@
 							}
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			"label": "Clinical Visit Details",
+			"sections": [
 				{
 					"label": "Clinic Visit Form",
 					"isExpanded": "true",
@@ -1559,7 +1569,12 @@
 							}
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			"label": "HIV Setting and Testing",
+			"sections": [
 				{
 					"label": "Previous HIV Setting",
 					"isExpanded": "true",
@@ -1801,11 +1816,16 @@
 							},
 							"validators": [],
 							"hide": {
-								"hideWhenExpression": "linkedToArt !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+								"hideWhenExpression": "isEmpty(linkedToArt) || linkedToArt === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
 							}
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			"label": "Self Testing",
+			"sections": [
 				{
 					"label": "Self Testing",
 					"isExpanded": "true",
@@ -1885,7 +1905,7 @@
 								}
 							],
 							"hide": {
-								"hideWhenExpression": "isEmpty(selfTested) || selfTested !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+								"hideWhenExpression": "isEmpty(selfTested) && selfTested !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
 							}
 						},
 						{
@@ -2038,7 +2058,12 @@
 							}
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			"label": "Other Services",
+			"sections": [
 				{
 					"label": "Counselor Name and Date",
 					"isExpanded": "true",
